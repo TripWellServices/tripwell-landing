@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripWell - AI-Powered Trip Planning</title>
+    <meta name="description" content="Plan your perfect trip with AI. Get personalized itineraries, discover hidden gems, and create unforgettable travel experiences.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-gray-900">TripWell</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="https://tripwell.app" class="text-gray-600 hover:text-gray-900">Full App</a>
+                    <a href="#about" class="text-gray-600 hover:text-gray-900">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="gradient-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                    Welcome to TripWell
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-blue-100">
+                    Pick your path to the perfect trip
+                </p>
+                <p class="text-lg text-blue-200 max-w-3xl mx-auto">
+                    AI-powered trip planning that creates personalized itineraries, discovers hidden gems, and makes every journey unforgettable.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Options Section -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <!-- Option 1: Venture with TripWell -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 card-hover">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Venture with TripWell</h3>
+                    <p class="text-gray-600 mb-6">
+                        Ready to dive into the full TripWell experience? Create your complete trip with AI-powered planning, live day-by-day guidance, and post-trip reflections.
+                    </p>
+                    <a href="https://tripwell.app" 
+                       class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                        Take me to the App
+                    </a>
+                </div>
+            </div>
+
+            <!-- Option 2: Take a Test Spin -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 card-hover">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Take a Test Spin</h3>
+                    <p class="text-gray-600 mb-6">
+                        Try TripWell's AI magic with a quick demo. Enter your destination and preferences, and see how we create a personalized itinerary just for you.
+                    </p>
+                    <a href="demo.html" 
+                       class="inline-block bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
+                        Demo Itinerary
+                    </a>
+                </div>
+            </div>
+
+            <!-- Option 3: Got an Upcoming Trip? -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 card-hover">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Got an Upcoming Trip?</h3>
+                    <p class="text-gray-600 mb-6">
+                        Already have a trip planned? Let us show you the top things to do, hidden gems, and local recommendations for your destination.
+                    </p>
+                    <a href="demo.html?mode=topThings" 
+                       class="inline-block bg-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors">
+                        Demo Best Things
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Why Choose TripWell?</h2>
+                <p class="text-xl text-gray-600">AI-powered travel planning that actually works</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">AI-Powered Planning</h3>
+                    <p class="text-gray-600">Advanced AI creates personalized itineraries based on your preferences, travel style, and interests.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Hidden Gems</h3>
+                    <p class="text-gray-600">Discover local favorites, off-the-beaten-path attractions, and authentic experiences that tourists often miss.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Live Guidance</h3>
+                    <p class="text-gray-600">Get day-by-day guidance during your trip with real-time recommendations and flexible itinerary adjustments.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold mb-4">TripWell</h3>
+                <p class="text-gray-400 mb-6">AI-powered trip planning for unforgettable adventures</p>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://tripwell.app" class="text-gray-400 hover:text-white">Full App</a>
+                    <a href="#privacy" class="text-gray-400 hover:text-white">Privacy</a>
+                    <a href="#terms" class="text-gray-400 hover:text-white">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple analytics tracking
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track page views
+            console.log('Landing page loaded');
+            
+            // Track button clicks
+            document.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function() {
+                    console.log('Clicked:', this.href);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
